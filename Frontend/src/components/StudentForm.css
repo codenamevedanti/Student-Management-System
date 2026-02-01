@@ -1,0 +1,90 @@
+/* Container styling for a centered, card-like appearance */
+.form-container {
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Input field styling */
+input {
+    padding: 12px 15px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Button group alignment */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Shared button styles */
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Specific button colors */
+.btn-save {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #43a047;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #e53935;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .form-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
